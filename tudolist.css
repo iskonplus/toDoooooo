@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Caveat', cursive;
+  outline: none;
+  color: #757575;
+}
+/* ----------------------Modul Block-------------------------- */
+.modul_Block {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.modul_padding {
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  text-align: center;
+  margin: 15% auto auto;
+  border-radius: 3px;
+  display: flex;
+  box-shadow: 0px 0px 5px #00000075;
+}
+
+.del {
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  align-items: center;
+  margin: auto;
+}
+
+.ok {
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  align-items: center;
+  margin: auto;
+}
+
+.buttonYes,
+.buttonCancel {
+  width: 60px;
+  border-radius: 3px;
+  border: 2px #cfc9c8 solid;
+  background-color: #f9f3f0;
+  border-radius: 5px;
+  color: #757575;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+
+.buttonYes:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+  color: #f9f3f0;
+  cursor: pointer;
+}
+
+.buttonCancel:hover {
+  border-color: #757575;
+  background-color: #757575;
+  color: #f9f3f0;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------ */
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+
+.section_container {
+  width: 100%;
+  padding: 60px 157px 0px 170px;
+}
+
+.section_background {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header_text {
+  text-align: center;
+}
+
+/* ----------------section_header-------------------  */
+
+.section_header {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.add {
+  width: 60%;
+  height: 40px;
+  resize: none;
+  border: 2px #cfc9c8 solid;
+  border-radius: 5px;
+  background-color: #fdfaf9;
+  margin: 0px 10px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #757575;
+}
+
+.add.data {
+  width: 25%;
+}
+
+.add.button_save {
+  width: 15%;
+  padding-left: 0px;
+  transition: 0.3s;
+}
+
+.add.button_save:hover {
+  background-color: #757575;
+  border-color: #757575;
+  color: #f9f3f0;
+  cursor: pointer;
+}
+
+/* ----------------------section_main------------------ */
+
+.section_main {
+  display: flex;
+  width: 100%;
+}
+
+.section_main_padding {
+  width: 33.33%;
+  padding: 0px 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.box {
+  margin-top: -18px;
+  width: 100%;
+  height: 48vh;
+  /* border: 2px #cfc9c8 solid; */
+  border-bottom: 2px #cfc9c8 solid;
+  border-top: 2px #cfc9c8 solid;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* border-radius: 5px; */
+  overflow: auto;
+  padding: 15px 0px 15px 0px;
+  text-align: left;
+}
+
+.box::-webkit-scrollbar{
+  width: 3px;
+}
+
+.box::-webkit-scrollbar-thumb{
+  background: #cfc9c8;
+  border-radius: 2px;
+  
+}
+
+::-webkit-scrollbar-track-piece{
+  text-decoration-color: brown;
+}
+
+.div_content > div {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  padding-top: 5px;
+}
+
+.div_content > div:hover {
+  background-color: rgba(207, 201, 200, 0.1);
+}
+
+.div_content > div {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.div_content > div:hover {
+  background-color: rgba(207, 201, 200, 0.2);
+}
+
+.border_p {
+  margin: auto;
+  width: 55%;
+  border: 2px #cfc9c8 solid;
+  position: relative;
+  background-color: #fdfaf9;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.p_textarea {
+  font-weight: bold;
+ 
+}
+
+.p_data {
+  color: #b86969;
+  padding-left: 12px;
+}
+
+.ToTextarea_and_data {
+  width: 80%;
+  margin-left: 5px;
+  border-bottom: 1px #cfc9c8 dashed;
+}
+
+.litle_button {
+  width: 20%;
+  display: flex;
+  margin-right: 5px;
+}
+
+.div_Button1 {
+  background-image: url(./img/arrow1.png);
+  width: 50%;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: center;
+  margin-left: 3px;
+  border-radius: 3px;
+  border: 1px #cfc9c8 solid;
+}
+
+.div_Button1:hover {
+  background-image: url(./img/arrow2.png);
+  border: 1px #60cf05 solid;
+}
+
+.div_Button2 {
+  background-image: url(./img/musor1.png);
+  width: 50%;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-left: 3px;
+  border-radius: 3px;
+  border: 1px #cfc9c8 solid;
+}
+
+.div_Button2:hover {
+  background-image: url(./img/musor2.png);
+  border: 1px #ff0000 solid;
+}
+
+/* divForP.className = "to_do_content";
+divForButton.className = "content_button"; */
+
+/* ----------------------section_footer------------------ */
+
+.section_footer {
+  display: flex;
+  width: 100%;
+}
+
+.section_footer_padding {
+  width: 33.33%;
+  padding: 0px 10px;
+  margin-top: 20px;
+}
+
+.box_delite {
+  width: 100%;
+
+  border: 2px #cfc9c8 solid;
+  background-color: #fdfaf9;
+  border-radius: 5px;
+}
+
+.delete_all:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+  color: #f9f3f0;
+  cursor: pointer;
+}
+
+.box_delete_all.in_to_do {
+  margin: -12px;
+}
+
+.box_delete_all.in_progress {
+  margin: -12px;
+}
+
+.box_delete_all.in_done {
+  margin: -12px;
+}
+
+/* ----------------------delete All------------------ */
+
+.box_delete_all {
+  width: 100%;
+  padding: 0px 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.delete_all {
+  width: 60px;
+  border: 2px #cfc9c8 solid;
+  background-color: #f9f3f0;
+  border-radius: 5px;
+  color: #757575;
+  font-weight: bold;
+  transition: 0.3s;
+  position: relative;
+}
+.delete_all.all {
+  width: 80px;
+  margin-top: 20px;
+}
